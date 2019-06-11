@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'angular-component-template';
+  countdownMsg = '';
+  countdownAliasMsg = '';
+  finishCountdown() {
+    this.countdownMsg = 'Finished!';
+  }
+
+  endCountdown() {
+    this.countdownAliasMsg = 'Ended!';
+  }
+
+  onRateChange(value) {
+    console.log(value);
+  }
 }
